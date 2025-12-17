@@ -43,4 +43,3 @@ const QuizOption = <template>
 </template> satisfies TOC<QuizOptionSignature>;
 
 export default QuizOption;
-

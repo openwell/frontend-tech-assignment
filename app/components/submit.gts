@@ -80,9 +80,14 @@ export default class Submit extends Component<SubmitSignature> {
     <div class="bg-white rounded-lg shadow-lg p-8">
       <h2 class="text-2xl font-bold mb-6 text-gray-800">Review Your Answers</h2>
 
-      <div class="flex flex-col md:flex-row md:items-center md:justify-between bg-indigo-50 border border-indigo-100 rounded-lg p-4 mb-6 gap-3">
+      <div
+        class="flex flex-col md:flex-row md:items-center md:justify-between bg-indigo-50 border border-indigo-100 rounded-lg p-4 mb-6 gap-3"
+      >
         <div class="text-lg font-semibold text-gray-800">
-          Score: {{this.totalCorrect}} / {{this.totalQuestions}}
+          Score:
+          {{this.totalCorrect}}
+          /
+          {{this.totalQuestions}}
         </div>
         <div class="text-sm text-gray-600">
           Correct answers are marked below.
@@ -93,10 +98,15 @@ export default class Submit extends Component<SubmitSignature> {
         {{#each this.questionsWithAnswers as |question|}}
           <div class="border-b border-gray-200 pb-6 last:border-b-0">
             <div class="font-semibold text-lg text-gray-800 mb-3">
-              Question {{question.number}}: {{question.text}}
+              Question
+              {{question.number}}:
+              {{question.text}}
             </div>
 
-            <div class="mb-2 text-sm font-medium {{if question.isCorrect 'text-green-600' 'text-red-600'}}">
+            <div
+              class="mb-2 text-sm font-medium
+                {{if question.isCorrect 'text-green-600' 'text-red-600'}}"
+            >
               {{if question.isCorrect "Correct" "Incorrect"}}
             </div>
 
@@ -104,7 +114,7 @@ export default class Submit extends Component<SubmitSignature> {
               {{#if question.hasSelections}}
                 <ul class="space-y-3">
                   {{#each question.selectedOptions as |option|}}
-                  <QuizOption @option={{option}} />
+                    <QuizOption @option={{option}} />
                   {{/each}}
                 </ul>
               {{else}}

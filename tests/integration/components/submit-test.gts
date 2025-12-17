@@ -21,13 +21,15 @@ module('Integration | Component | submit', function (hooks) {
     const selectedAnswers: Record<string, string[]> = { q1: ['o1'] };
     const onSubmit = () => {};
 
-    await render(<template>
-      <Submit
-        @quizData={{quizData}}
-        @selectedAnswers={{selectedAnswers}}
-        @onSubmit={{onSubmit}}
-      />
-    </template>);
+    await render(
+      <template>
+        <Submit
+          @quizData={{quizData}}
+          @selectedAnswers={{selectedAnswers}}
+          @onSubmit={{onSubmit}}
+        />
+      </template>
+    );
 
     assert.dom().includesText('Question 1');
   });

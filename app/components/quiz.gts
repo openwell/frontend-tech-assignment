@@ -151,4 +151,3 @@ export default class Quiz extends Component<QuizSignature> {
     </main>
   </template>
 }
-

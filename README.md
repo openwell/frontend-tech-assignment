@@ -15,10 +15,12 @@ Approximately 2.8 hours were spent on this assignment, including setup, componen
 ### Trade-offs made and improvements with more time
 
 Trade-offs:
+
 - Used static JSON data instead of a dynamic backend for simplicity.
 - Focused on core functionality; some edge cases (e.g., validation) were not fully addressed.
 
 Improvements with more time:
+
 - Implement better error handling and user feedback (e.g., loading states, error messages).
 - Better UI.
 - Optimize performance for larger quizzes (e.g., lazy loading questions).

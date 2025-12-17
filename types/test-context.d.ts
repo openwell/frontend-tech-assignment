@@ -5,4 +5,3 @@ declare module '@ember/test-helpers' {
     [key: string]: unknown;
   }
 }
-

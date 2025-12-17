@@ -1,8 +1,7 @@
- import { module, test } from 'qunit';
+import { module, test } from 'qunit';
 import { setupRenderingTest } from 'ember-latest/tests/helpers';
 import { render } from '@ember/test-helpers';
 import Quiz from 'ember-latest/components/quiz';
-
 
 module('Integration | Component | quiz', function (hooks) {
   setupRenderingTest(hooks);
@@ -20,9 +19,7 @@ module('Integration | Component | quiz', function (hooks) {
       ],
     };
 
-    await render(<template>
-      <Quiz @model={{model}} />
-    </template>);
+    await render(<template><Quiz @model={{model}} /></template>);
 
     assert.dom('h1').includesText('Test Quiz');
   });

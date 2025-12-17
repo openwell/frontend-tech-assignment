@@ -22,4 +22,3 @@ export interface QuizData {
 }
 
 export type SelectedAnswers = Record<string, string[]>;
-

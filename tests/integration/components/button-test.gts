@@ -17,11 +17,13 @@ module('Integration | Component | button', function (hooks) {
     assert.dom().hasText('');
 
     // Template block usage:
-    await render(<template>
-      <Button>
-        template block text
-      </Button>
-    </template>);
+    await render(
+      <template>
+        <Button>
+          template block text
+        </Button>
+      </template>
+    );
 
     assert.dom().hasText('template block text');
   });
