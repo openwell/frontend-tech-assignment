@@ -1,5 +1,29 @@
 # Quiz UI
 
+### Instructions to run
+
+1. Clone the repository: `git clone <repository-url>`
+2. Navigate to the project directory: `cd frontend-tech-assignment`
+3. Install dependencies: `npm install`
+4. Start the development server: `npm run start`
+5. Visit the app at [http://localhost:4200](http://localhost:4200)
+
+### Time spent
+
+Approximately 2.8 hours were spent on this assignment, including setup, component development, state management, testing, and lint fixes.
+
+### Trade-offs made and improvements with more time
+
+Trade-offs:
+- Used static JSON data instead of a dynamic backend for simplicity.
+- Focused on core functionality; some edge cases (e.g., validation) were not fully addressed.
+
+Improvements with more time:
+- Implement better error handling and user feedback (e.g., loading states, error messages).
+- Better UI.
+- Optimize performance for larger quizzes (e.g., lazy loading questions).
+- Fix broken tests and lint error
+
 ## Assignment
 
 Build a small quiz interface based on the wireframe below. The focus is on component design, state management, and code quality.
