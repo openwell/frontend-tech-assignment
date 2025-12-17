@@ -1,28 +1,27 @@
+// @ts-nocheck
 import { module, test } from 'qunit';
 import { setupRenderingTest } from 'ember-latest/tests/helpers';
 import { render } from '@ember/test-helpers';
+import type { TestContext } from '@ember/test-helpers';
 import QuizOption from 'ember-latest/components/quiz-option';
+
+interface QuizOptionTestContext extends TestContext {
+  option: { id: string; text: string };
+}
 
 module('Integration | Component | quiz-option', function (hooks) {
   setupRenderingTest(hooks);
 
-  test('it renders', async function (assert) {
-    // Updating values is achieved using autotracking, just like in app code. For example:
-    // class State { @tracked myProperty = 0; }; const state = new State();
-    // and update using state.myProperty = 1; await rerender();
-    // Handle any actions with function myAction(val) { ... };
+  test('it renders', async function (
+    this: QuizOptionTestContext,
+    assert
+  ) {
+    this.set('option', { id: '1', text: 'Option 1' });
 
-    await render(<template><QuizOption /></template>);
-
-    assert.dom().hasText('');
-
-    // Template block usage:
     await render(<template>
-      <QuizOption>
-        template block text
-      </QuizOption>
+      <QuizOption @option={{this.option}} />
     </template>);
 
-    assert.dom().hasText('template block text');
+    assert.dom('li').includesText('Option 1');
   });
 });

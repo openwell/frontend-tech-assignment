@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { module, test } from 'qunit';
 import { setupRenderingTest } from 'ember-latest/tests/helpers';
 import { render } from '@ember/test-helpers';
@@ -7,22 +8,21 @@ module('Integration | Component | quiz', function (hooks) {
   setupRenderingTest(hooks);
 
   test('it renders', async function (assert) {
-    // Updating values is achieved using autotracking, just like in app code. For example:
-    // class State { @tracked myProperty = 0; }; const state = new State();
-    // and update using state.myProperty = 1; await rerender();
-    // Handle any actions with function myAction(val) { ... };
+    this.set('model', {
+      title: 'Test Quiz',
+      questions: [
+        {
+          id: 'q1',
+          text: 'Question?',
+          options: [{ id: 'o1', text: 'Option 1' }],
+        },
+      ],
+    });
 
-    await render(<template><Quiz /></template>);
-
-    assert.dom().hasText('');
-
-    // Template block usage:
     await render(<template>
-      <Quiz>
-        template block text
-      </Quiz>
+      <Quiz @model={{this.model}} />
     </template>);
 
-    assert.dom().hasText('template block text');
+    assert.dom('h1').includesText('Test Quiz');
   });
 });

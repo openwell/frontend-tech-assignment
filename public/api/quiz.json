@@ -1,0 +1,111 @@
+{
+  "title": "Everyday Knowledge Quiz",
+  "questions": [
+    {
+      "id": "q1",
+      "text": "Which of these are fruits?",
+      "instructions": "Select all that apply.",
+      "options": [
+        {
+          "id": "q1o1",
+          "text": "Apple",
+          "image": "https://images.unsplash.com/photo-1567306226416-28f0efdc88ce?auto=format&fit=crop&w=200&h=200&q=80"
+        },
+        {
+          "id": "q1o2",
+          "text": "Carrot",
+          "image": "https://images.unsplash.com/photo-1506801310323-534be5e7bb3e?auto=format&fit=crop&w=200&h=200&q=80"
+        },
+        {
+          "id": "q1o3",
+          "text": "Banana",
+          "image": "https://images.unsplash.com/photo-1574226516831-e1dff420e12e?auto=format&fit=crop&w=200&h=200&q=80"
+        },
+        {
+          "id": "q1o4",
+          "text": "Potato",
+          "image": "https://images.unsplash.com/photo-1506808547685-e2ba962ded58?auto=format&fit=crop&w=200&h=200&q=80"
+        }
+      ],
+      "correctOptionIds": ["q1o1", "q1o3"]
+    },
+    {
+      "id": "q2",
+      "text": "Which items are programming languages?",
+      "instructions": "Select all that apply.",
+      "options": [
+        { "id": "q2o1", "text": "JavaScript" },
+        { "id": "q2o2", "text": "Python" },
+        { "id": "q2o3", "text": "Rust" },
+        { "id": "q2o4", "text": "Coffee" }
+      ],
+      "correctOptionIds": ["q2o1", "q2o2", "q2o3"]
+    },
+    {
+      "id": "q3",
+      "text": "Which of these are renewable energy sources?",
+      "instructions": "Select all that apply.",
+      "options": [
+        { "id": "q3o1", "text": "Solar" },
+        { "id": "q3o2", "text": "Wind" },
+        { "id": "q3o3", "text": "Coal" },
+        { "id": "q3o4", "text": "Hydro" }
+      ],
+      "correctOptionIds": ["q3o1", "q3o2", "q3o4"]
+    },
+    {
+      "id": "q4",
+      "text": "Which tips help keep your online accounts safer?",
+      "instructions": "Select all that apply.",
+      "options": [
+        { "id": "q4o1", "text": "Use a password manager" },
+        { "id": "q4o2", "text": "Enable multi-factor authentication" },
+        { "id": "q4o3", "text": "Reuse the same password everywhere" },
+        { "id": "q4o4", "text": "Review sign-in alerts" }
+      ],
+      "correctOptionIds": ["q4o1", "q4o2", "q4o4"]
+    },
+    {
+      "id": "q5",
+      "text": "Which of these are visible planets from Earth without a telescope?",
+      "instructions": "Select all that apply.",
+      "options": [
+        { "id": "q5o1", "text": "Venus" },
+        { "id": "q5o2", "text": "Mars" },
+        { "id": "q5o3", "text": "Neptune" },
+        { "id": "q5o4", "text": "Jupiter" }
+      ],
+      "correctOptionIds": ["q5o1", "q5o2", "q5o4"]
+    },
+    {
+      "id": "q6",
+      "text": "Media accessibility best practices",
+      "instructions": "Review the media below and select all statements that match good practice.",
+      "image": "https://images.unsplash.com/photo-1522199710521-72d69614c702?w=900&h=520&fit=crop",
+      "video": "https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4",
+      "options": [
+        {
+          "id": "q6o1",
+          "text": "Provide captions or transcripts for video content",
+          "image": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=300&h=200&q=80"
+        },
+        {
+          "id": "q6o2",
+          "text": "Use empty alt text for decorative images"
+        },
+        {
+          "id": "q6o3",
+          "text": "Autoplay videos with sound to grab attention",
+          "video": "https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4"
+        },
+        {
+          "id": "q6o4",
+          "text": "Ensure sufficient color contrast on text over images"
+        }
+      ],
+      "correctOptionIds": ["q6o1", "q6o2", "q6o4"]
+    }
+  ]
+}
+
+
