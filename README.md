@@ -2,7 +2,7 @@
 
 ### Instructions to run
 
-1. Clone the repository: `git clone <repository-url>`
+1. Clone the repository: `git clone https://github.com/openwell/frontend-tech-assignment.git`
 2. Navigate to the project directory: `cd frontend-tech-assignment`
 3. Install dependencies: `npm install`
 4. Start the development server: `npm run start`
