@@ -25,7 +25,7 @@ export default class Navigation extends Component<NavigationSignature> {
   }
 
   <template>
-    <div class="flex justify-between items-center w-full relative">
+    <div class="flex flex-col md:flex-row justify-between items-center w-full relative gap-4 md:gap-0">
       {{! Previous & Next Buttons (Left) }}
       <div class="flex gap-3">
         <Button

@@ -80,7 +80,7 @@ export default class Submit extends Component<SubmitSignature> {
     <div class="bg-white rounded-lg shadow-lg p-8">
       <h2 class="text-2xl font-bold mb-6 text-gray-800">Review Your Answers</h2>
 
-      <div class="flex items-center justify-between bg-indigo-50 border border-indigo-100 rounded-lg p-4 mb-6">
+      <div class="flex flex-col md:flex-row md:items-center md:justify-between bg-indigo-50 border border-indigo-100 rounded-lg p-4 mb-6 gap-3">
         <div class="text-lg font-semibold text-gray-800">
           Score: {{this.totalCorrect}} / {{this.totalQuestions}}
         </div>

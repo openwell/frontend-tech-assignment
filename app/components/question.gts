@@ -148,27 +148,21 @@ export default class Question extends Component<QuestionSignature> {
               </div>
 
               {{#if option.image}}
-                <div
-                  class="mt-2"
-                  role="img"
-                  aria-label="Image for option: {{option.text}}"
-                >
-                  <img
-                    src={{option.image}}
-                    alt=""
-                    class="w-full h-32 object-cover rounded"
-                  />
-                </div>
+                <img
+                  src={{option.image}}
+                  alt="{{option.text}}"
+                  class="w-full h-32 object-cover rounded mt-2"
+                />
               {{/if}}
 
               {{#if option.video}}
                 <div class="mt-2">
                   <video
                     src={{option.video}}
-                    controls
                     aria-label="Video for option: {{option.text}}"
                     class="w-full h-32 object-cover rounded"
                   >
+                    <track kind="captions" />
                     Your browser does not support the video tag.
                   </video>
                 </div>
