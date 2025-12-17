@@ -64,7 +64,7 @@ export default class Button extends Component<ButtonSignature> {
   }
 
   get classNames(): string {
-    let classes = [
+    const classes = [
       BASE_CLASSES,
       this.variantClass,
       this.sizeClass,

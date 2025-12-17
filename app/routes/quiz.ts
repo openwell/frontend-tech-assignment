@@ -11,8 +11,8 @@ export default class QuizRoute extends Route {
   }
 
   async model(): Promise<QuizData> {
-    let response = await fetch('/api/quiz.json');
-    let parsed = await response.json();
+    const response = await fetch('/api/quiz.json');
+    const parsed = (await response.json()) as QuizData;
     return parsed;
   }
 }
